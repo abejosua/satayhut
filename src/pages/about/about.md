@@ -5,4 +5,4 @@ title: About Me
 ---
 My name is Michele Prawiromaruto.
 
-Dead.
+![gudetama](/files/246538-gudetama-gudetama.gif)
