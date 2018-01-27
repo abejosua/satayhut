@@ -3,13 +3,13 @@
 
 //// bootswatch theme overrides
 // @import "node_modules/bootswatch/dist/cerulean/variables";
-@import "node_modules/bootswatch/dist/cosmo/variables";
+// @import "node_modules/bootswatch/dist/cosmo/variables";
 // @import "node_modules/bootswatch/dist/cyborg/variables";
 // @import "node_modules/bootswatch/dist/darkly/variables";
 // @import "node_modules/bootswatch/dist/flatly/variables";
 // @import "node_modules/bootswatch/dist/journal/variables";
 // @import "node_modules/bootswatch/dist/litera/variables";
-// @import "node_modules/bootswatch/dist/lumen/variables";
+@import "node_modules/bootswatch/dist/lumen/variables";
 // @import "node_modules/bootswatch/dist/lux/variables";
 // @import "node_modules/bootswatch/dist/materia/variables";
 // @import "node_modules/bootswatch/dist/minty/variables";
@@ -100,10 +100,15 @@
   }
 }
 
+.navbar-brand {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .navbar-nav {
   flex-direction: row!important;
 
   & > * {
-    padding-left: 10px; 
+    padding-left: 10px;
   }
 }
