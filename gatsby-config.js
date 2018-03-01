@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Michele Joie Prawiromaruto',
+    title: 'Satay Hut',
   },
   plugins: [
     {
