@@ -3,8 +3,9 @@
 }
 
 .carousel-item {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,1);
   .carousel-image {
+    opacity: 0.8;
     width: 100%;
     min-height: 75vh;
     background-position: center;
