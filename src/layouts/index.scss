@@ -58,7 +58,7 @@
 // @import "node_modules/bootstrap/scss/modal";
 // @import "node_modules/bootstrap/scss/tooltip";
 // @import "node_modules/bootstrap/scss/popover";
-// @import "node_modules/bootstrap/scss/carousel";
+@import "node_modules/bootstrap/scss/carousel";
 @import "node_modules/bootstrap/scss/utilities";
 
 
@@ -96,7 +96,14 @@
   & > .pageContent {
     flex: 1;
     overflow: auto;
-    padding-top: 10px;
+  }
+}
+
+.navbar {
+  position: absolute;
+  z-index: 2;
+  a {
+    color: white;
   }
 }
 
@@ -107,7 +114,6 @@
 
 .navbar-nav {
   flex-direction: row!important;
-
   & > * {
     padding-left: 10px;
   }

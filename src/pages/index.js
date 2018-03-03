@@ -3,18 +3,25 @@ import { Container, Card, CardText, CardBody, CardTitle, CardSubtitle } from 're
 import Link from 'gatsby-link'
 import graphql from 'graphql'
 
+import Hero from '../components/hero.js'
+
+
 const IndexPage = ({ data }) => (
-  <Container>
-    {data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.contentType === 'blog').map(({ node: post }) => (
-      <Card style={{marginBottom: 10}} key={post.id}>
-        <CardBody>
-          <CardTitle><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></CardTitle>
-          <CardSubtitle style={{marginBottom: 10}}>{post.frontmatter.date}</CardSubtitle>
-          <CardText>{post.excerpt}</CardText>
-        </CardBody>
-      </Card>
-    ))}
-  </Container>
+  <div>
+    <Hero></Hero>
+    {/* <Container>
+      {data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.contentType === 'blog').map(({ node: post }) => (
+        <Card style={{marginBottom: 10}} key={post.id}>
+          <CardBody>
+            <CardTitle><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></CardTitle>
+            <CardSubtitle style={{marginBottom: 10}}>{post.frontmatter.date}</CardSubtitle>
+            <CardText>{post.excerpt}</CardText>
+          </CardBody>
+        </Card>
+      ))}
+    </Container> */}
+  </div>
+
 )
 
 export default IndexPage
